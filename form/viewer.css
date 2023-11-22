@@ -1,1 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: bisque;
+}
+
+button {
+    border-radius: 15px;
+    background-color: aquamarine;
+    color: white;
+    padding: 10px;
+}
