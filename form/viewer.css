@@ -4,3 +4,9 @@ body {
     font-family: 'Manrope', sans-serif;
     background-color: bisque;
 }
+
+button {
+    border-radius: 15px;
+    background-color: aquamarine;
+    color: white;
+}
