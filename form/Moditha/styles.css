@@ -115,3 +115,23 @@
   border: 1px solid gray;
   border-radius: 25px;
 }
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.btn-container input {
+  padding: 1%;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(127, 255, 180);
+}
+
+.btn-container input:hover {
+  background-color: rgb(64, 224, 131);
+}
