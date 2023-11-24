@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .form-container {
@@ -36,7 +36,7 @@
 }
 
 .form-body {
-  width: 50%;
+  width: 60%;
 }
 
 .name-section {
@@ -50,7 +50,7 @@
   width: 49%;
   display: flex;
   flex-direction: column;
-  margin-right: 10px;
+  margin-right: auto;
 }
 
 .name-section .first-name label {
@@ -133,6 +133,7 @@
   border: none;
   border-radius: 20px;
   background-color: rgb(127, 255, 180);
+  cursor: pointer;
 }
 
 .btn-container input:hover {
@@ -140,9 +141,16 @@
 }
 
 @media (max-width: 845px) {
+  .header #form-name {
+    font-size: 80%;
+  }
+
+  .form-body {
+    width: 60%;
+  }
+  
   .name-section {
     flex-direction: column;
-    flex-wrap: wrap;
   }
 
   .name-section .first-name {
@@ -175,27 +183,52 @@
 
   .btn-container input {
     padding: 2%;
+    font-size: 90%;
   }
 }
 
 @media (max-width: 600px) {
+  .header #form-name {
+    font-size: 70%;
+  }
+
+  .form-body {
+    width: 70%;
+  }
+
   .name-section .first-name label {
-    text-align: center;
     font-size: 90%;
   }
 
   .name-section .last-name label {
-    text-align: center;
     font-size: 90%;
   }
 
   .email-section label {
-    text-align: center;
     font-size: 90%;
   }
 
   .phone-section label {
-    text-align: center;
     font-size: 90%;
+  }
+
+  .btn-container input {
+    padding: 2%;
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    width: auto;
+  }
+
+  .header #form-name {
+    font-size: 50%;
+  }
+
+  .btn-container input {
+    padding: 3%;
+    font-size: 70%;
   }
 }
