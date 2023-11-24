@@ -36,19 +36,21 @@
 }
 
 .form-body {
-  width: 40%;
+  width: 50%;
 }
 
 .name-section {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
 .name-section .first-name {
+  width: 49%;
   display: flex;
   flex-direction: column;
+  margin-right: 10px;
 }
 
 .name-section .first-name label {
@@ -58,12 +60,13 @@
 }
 
 .name-section .first-name input {
-  padding: 10% 15% 10% 8%;
+  padding: 9% 15% 9% 8%;
   border: 1px solid gray;
   border-radius: 25px;
 }
 
 .name-section .last-name {
+  width: 49%;
   display: flex;
   flex-direction: column;
 }
@@ -75,7 +78,7 @@
 }
 
 .name-section .last-name input {
-  padding: 10% 15% 10% 8%;
+  padding: 9% 15% 9% 8%;
   border: 1px solid gray;
   border-radius: 25px;
 }
@@ -83,7 +86,7 @@
 .email-section {
   display: flex;
   flex-direction: column;
-  margin-top: 4px;
+  margin-top: 10px;
 }
 
 .email-section label {
@@ -93,7 +96,7 @@
 }
 
 .email-section input {
-  padding: 2%;
+  padding: 4% 15% 4% 4%;
   border: 1px solid gray;
   border-radius: 25px;
 }
@@ -101,7 +104,7 @@
 .phone-section {
   display: flex;
   flex-direction: column;
-  margin-top: 4px;
+  margin-top: 10px;
 }
 
 .phone-section label {
@@ -111,7 +114,7 @@
 }
 
 .phone-section input {
-  padding: 2%;
+  padding: 4% 15% 4% 4%;
   border: 1px solid gray;
   border-radius: 25px;
 }
@@ -119,11 +122,11 @@
 .btn-container {
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 .btn-container input {
-  padding: 1%;
+  padding: 2%;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 2px;
@@ -134,4 +137,65 @@
 
 .btn-container input:hover {
   background-color: rgb(64, 224, 131);
+}
+
+@media (max-width: 845px) {
+  .name-section {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .name-section .first-name {
+    width: 100%;
+  }
+
+  .name-section .first-name input {
+    padding: 5% 15% 5% 6%;
+  }
+
+  .name-section .last-name {
+    width: 100%;
+  }
+
+  .name-section .last-name input {
+    padding: 5% 15% 5% 6%;
+  }
+
+  .email-section input {
+    padding: 5% 15% 5% 6%;
+  }
+
+  .phone-section input {
+    padding: 5% 15% 5% 6%;
+  }
+
+  .btn-container {
+    margin-top: 12px;
+  }
+
+  .btn-container input {
+    padding: 2%;
+  }
+}
+
+@media (max-width: 600px) {
+  .name-section .first-name label {
+    text-align: center;
+    font-size: 90%;
+  }
+
+  .name-section .last-name label {
+    text-align: center;
+    font-size: 90%;
+  }
+
+  .email-section label {
+    text-align: center;
+    font-size: 90%;
+  }
+
+  .phone-section label {
+    text-align: center;
+    font-size: 90%;
+  }
 }
