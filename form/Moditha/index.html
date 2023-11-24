@@ -31,24 +31,48 @@
       </div>
 
       <div class="form-body">
-        <form action="">
+        <form action="" id="form">
           <div class="name-section">
             <div class="first-name">
               <label for="first-name">First Name</label>
-              <input type="text" name="first_name" id="f_name" placeholder="First Name"/>
+              <input
+                type="text"
+                name="first_name"
+                id="first_name"
+                placeholder="First Name"
+              />
+              <span id="first-name-err" for="validation"></span>
             </div>
             <div class="last-name">
               <label for="first-name">Last Name</label>
-              <input type="text" name="last_name" id="l_name" placeholder="Last Name"/>
+              <input
+                type="text"
+                name="last_name"
+                id="l_name"
+                placeholder="Last Name"
+              />
+              <span id="last-name-err" for="validation"></span>
             </div>
           </div>
           <div class="email-section">
             <label for="email">Email Address</label>
-            <input type="email" name="email" id="email" placeholder="Email Address"/>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+            />
+            <span id="email-err" for="validation"></span>
           </div>
           <div class="phone-section">
             <label for="phone">Phone Number</label>
-            <input type="text" name="phone" id="phone" placeholder="Phone Number"/>
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="Phone Number"
+            />
+            <span id="phone-err" for="validation"></span>
           </div>
           <div class="btn-container">
             <input type="submit" value="SUBMIT" />
@@ -56,5 +80,7 @@
         </form>
       </div>
     </div>
+    <!-- JS -->
+    <script src="form.js"></script>
   </body>
 </html>
