@@ -3,6 +3,7 @@
 body {
     font-family: 'Manrope', sans-serif;
     background-color: bisque;
+    text-align: center;
 }
 
 button {
@@ -15,4 +16,6 @@ button {
 
 input{
     border-radius: 20px;
+    border: 1px solid black;
+    padding: 15px;
 }
