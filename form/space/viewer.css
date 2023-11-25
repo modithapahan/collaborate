@@ -12,3 +12,7 @@ button {
     color: black;
     padding: 10px;
 }
+
+input{
+    border-radius: 20px;
+}
