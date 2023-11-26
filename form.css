@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header #logo {
+  width: 50%;
+  border: 1px solid rgb(184, 166, 166);
+  border-radius: 100px;
+}
+
+.header #form-name {
+  font-weight: 300;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.header #form-name h1 {
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.form-body {
+  width: 60%;
+}
+
+.name-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-section .first-name {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+}
+
+.name-section .first-name label {
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 7px;
+}
+
+.name-section .first-name input {
+  padding: 9% 15% 9% 8%;
+  border: 1px solid gray;
+  border-radius: 25px;
+}
+
+.name-section .last-name {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+}
+
+.name-section .last-name label {
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 7px;
+}
+
+.name-section .last-name input {
+  padding: 9% 15% 9% 8%;
+  border: 1px solid gray;
+  border-radius: 25px;
+}
+
+.email-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.email-section label {
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 7px;
+}
+
+.email-section input {
+  padding: 4% 15% 4% 4%;
+  border: 1px solid gray;
+  border-radius: 25px;
+}
+
+.phone-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.phone-section label {
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 7px;
+}
+
+.phone-section input {
+  padding: 4% 15% 4% 4%;
+  border: 1px solid gray;
+  border-radius: 25px;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+
+.btn-container input {
+  padding: 2%;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(127, 255, 180);
+  cursor: pointer;
+}
+
+.btn-container input:hover {
+  background-color: rgb(64, 224, 131);
+}
+
+@media (max-width: 845px) {
+  .header #form-name {
+    font-size: 80%;
+  }
+
+  .form-body {
+    width: 60%;
+  }
+  
+  .name-section {
+    flex-direction: column;
+  }
+
+  .name-section .first-name {
+    width: 100%;
+  }
+
+  .name-section .first-name input {
+    padding: 5% 15% 5% 6%;
+  }
+
+  .name-section .last-name {
+    width: 100%;
+  }
+
+  .name-section .last-name input {
+    padding: 5% 15% 5% 6%;
+  }
+
+  .email-section input {
+    padding: 5% 15% 5% 6%;
+  }
+
+  .phone-section input {
+    padding: 5% 15% 5% 6%;
+  }
+
+  .btn-container {
+    margin-top: 12px;
+  }
+
+  .btn-container input {
+    padding: 2%;
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .header #form-name {
+    font-size: 70%;
+  }
+
+  .form-body {
+    width: 70%;
+  }
+
+  .name-section .first-name label {
+    font-size: 90%;
+  }
+
+  .name-section .last-name label {
+    font-size: 90%;
+  }
+
+  .email-section label {
+    font-size: 90%;
+  }
+
+  .phone-section label {
+    font-size: 90%;
+  }
+
+  .btn-container input {
+    padding: 2%;
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    width: auto;
+  }
+
+  .header #form-name {
+    font-size: 50%;
+  }
+
+  .btn-container input {
+    padding: 3%;
+    font-size: 70%;
+  }
+}

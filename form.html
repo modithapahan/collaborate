@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="form.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="form-container">
+      <!-- Header -->
+      <div class="header">
+        <img
+          id="logo"
+          src="https://img.freepik.com/premium-vector/colorful-bird-logo-design-vector-illustration_93835-345.jpg?w=360"
+          alt="logo"
+        />
+        <div id="form-name">
+          <h1>User Registration</h1>
+        </div>
+      </div>
+
+      <div class="form-body">
+        <form action="" id="myForm">
+          <div class="name-section">
+            <div class="first-name">
+              <label for="first-name">First Name</label>
+              <input
+                type="text"
+                name="first_name"
+                id="first_name"
+                placeholder="First Name"
+              />
+              <span id="first_name_err" for="validation"></span>
+            </div>
+            <div class="last-name">
+              <label for="first-name">Last Name</label>
+              <input
+                type="text"
+                name="last_name"
+                id="last_name"
+                placeholder="Last Name"
+              />
+              <span id="last-name-err" for="validation"></span>
+            </div>
+          </div>
+          <div class="email-section">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+            />
+            <span id="email-err" for="validation"></span>
+          </div>
+          <div class="phone-section">
+            <label for="phone">Phone Number</label>
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="Phone Number"
+            />
+            <span id="phone-err" for="validation"></span>
+          </div>
+          <div class="btn-container">
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- JS -->
+    <script src="form.js"></script>
+  </body>
+</html>
